@@ -1,14 +1,8 @@
 body {
     width: 1024px;
-}
-
-header {
-    /*margin-left: auto;
-    margin-right: auto;*/
-}
-
-h1 {
-    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -34,8 +28,9 @@ img {
 }
 
 #tab {
-    width: 700px;
+    width: 800px;
     margin: 20px;
+    /*flex: 1 0 auto;*/
 }
 
 #tab > input {
@@ -61,7 +56,7 @@ img {
 #table > div {
     background: red;
     position: absolute;
-    width: 700px;
+    width: 800px;
     padding: 15px;
     overflow: hidden;
     height: 155px;
@@ -75,11 +70,24 @@ img {
 #n3:checked ~ #table > div:nth-of-type(3),
 #n4:checked ~ #table > div:nth-of-type(4),
 #n5:checked ~ #table > div:nth-of-type(5),
-#n6:checked ~ #table > div:nth-of-type(6) {
+#n6:checked ~ #table > div:nth-of-type(6),
+#n7:checked ~ #table > div:nth-of-type(7) {
     opacity: 1;
 }
 
 #tab > input:checked + label {
     color: #333;
     background: #fff;
+}
+
+.contInf {
+    
+}
+
+.contInf {
+    flex: 0 0 auto;
+}
+
+.content {
+    flex: 1 0 auto;
 }
