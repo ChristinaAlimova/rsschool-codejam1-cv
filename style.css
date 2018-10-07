@@ -1,0 +1,93 @@
+body {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.name {
+  font-size: 200%;
+    margin-bottom: 1px;
+}
+
+.avatar{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.devName {
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#tab {
+    width: 800px;
+    margin: 20px;
+    /*flex: 1 0 auto;*/
+}
+
+#tab > input {
+    display: none;
+}
+
+#tab > label {
+    cursor: pointer;
+    display: block;
+    background: #333;
+    color: #fff;
+    float: left;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.8s;
+}
+
+#table {
+    clear: both;
+}
+
+#table > div {
+    background: red;
+    position: absolute;
+    width: 700px;
+    padding: 15px;
+    overflow: hidden;
+    height: 155px;
+    border-radius: 0 5px 5px 5px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#n1:checked ~ #table > div:nth-of-type(1),
+#n2:checked ~ #table > div:nth-of-type(2),
+#n3:checked ~ #table > div:nth-of-type(3),
+#n4:checked ~ #table > div:nth-of-type(4),
+#n5:checked ~ #table > div:nth-of-type(5),
+#n6:checked ~ #table > div:nth-of-type(6),
+#n7:checked ~ #table > div:nth-of-type(7) {
+    opacity: 1;
+}
+
+#tab > input:checked + label {
+    color: #333;
+    background: #fff;
+}
+
+.contInf {
+    
+}
+
+.contInf {
+    flex: 0 0 auto;
+}
+
+.content {
+    flex: 1 0 auto;
+}
