@@ -40,12 +40,46 @@
           
         <div>
           <h3>Skills</h3>
-          <p>I have experience in: JS, HTML, CSS. I have a good experience in QA. I have finished cources on Codecademy and Codewars.</p>
+          <p>I have experience in: JS, HTML, CSS. I have a good experience in QA. I have finished courses on Codecademy and Codewars.</p>
         </div> 
           
         <div>
           <h3>Code Examples</h3>
-          <p>dhgiuhguhifuygiunhurtyhiuhgiubh ihfbfhbf fybhifuhbufhb rf</p>
+          <p>
+              Here you can find my code examples: <br>
+            <code class="language-javascript">
+              function getLoveTrianglesCount(preferences = []) {
+              let countTriangle = 0;
+              let arr = [];
+
+              for (let i = 0; i < preferences.length; i++) {
+              arr[i] = 0;
+              }
+
+              for (let i = 0; i < preferences.length; i++) {
+              if(arr[i] == 1) {
+              continue;
+              }
+
+              let lover0 = preferences[i] - 1;
+              let lover1 = preferences[lover0] - 1;
+              let lover2 = preferences[lover1] - 1;
+
+              if (lover0 == lover1 || lover0 == lover2 || lover1 == lover2) {
+              continue;
+              }
+
+              if(lover2 == i) {
+              countTriangle++;
+              arr[i] = 1;
+              arr[lover0] = 1;
+              arr[lover1] = 1;
+              }
+              }
+              return countTriangle;
+            };
+            </code>
+          </p>
         </div>
           
         <div>
